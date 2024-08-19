@@ -278,6 +278,10 @@ table {
     color: var(--fgColor-default);
 }
 
+[dir] .nav-link {
+    transition: none;
+}
+
 .wt-primary-navigation .nav-link, .wt-user-menu .nav-link {
     color: var(--bs-body-color);
 }
