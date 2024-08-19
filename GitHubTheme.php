@@ -22,12 +22,44 @@ class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
     use ModuleCustomTrait;
     use ModuleGlobalTrait;
 
+    public const CUSTOM_AUTHOR = 'Fredrik Ekdahl';
+    public const CUSTOM_VERSION = '0.0.1';
+    public const GITHUB_REPO = 'ekdahl/webtrees-github-theme';
+    public const CUSTOM_SUPPORT_URL = 'https://github.com/ekdahl/webtrees-github-theme';
+
     /**
      * @return string
      */
     public function title(): string
     {
         return 'GitHub';
+    }
+
+    /**
+     * {@inheritDoc}
+     * @see \Fisharebest\Webtrees\Module\ModuleCustomInterface::customModuleAuthorName()
+     */
+    public function customModuleAuthorName(): string
+    {
+        return self::CUSTOM_AUTHOR;
+    }
+
+    /**
+     * {@inheritDoc}
+     * @see \Fisharebest\Webtrees\Module\ModuleCustomInterface::customModuleVersion()
+     */
+    public function customModuleVersion(): string
+    {
+        return self::CUSTOM_VERSION;
+    }
+
+    /**
+     * {@inheritDoc}
+     * @see \Fisharebest\Webtrees\Module\ModuleCustomInterface::customModuleSupportUrl()
+     */
+    public function customModuleSupportUrl(): string
+    {
+        return self::CUSTOM_SUPPORT_URL;
     }
 
     /**
