@@ -69,7 +69,7 @@ class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
      *
      * @return array<Menu>
      */
-    public function userMenu(Tree|null $tree): array
+    public function userMenu(?Tree $tree): array
     {
         return array_filter([
             $this->menuPendingChanges($tree),
