@@ -351,6 +351,10 @@ input {
     background-color: var(--bs-tertiary-bg);
 }
 
+.starredname {
+    text-decoration: underline;
+}
+
 .nav-item > .nav-link::before {
     font-family: "Font Awesome 6 Free";
     display: inline-block;
