@@ -130,6 +130,7 @@ class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
         $stylesheets = parent::stylesheets();
 
         $stylesheets[] = $this->assetUrl('css/theme.css');
+        $stylesheets[] = $this->assetUrl('css/icons.css');
         $stylesheets[] = $this->assetUrl('css/palettes/' . $this->palette() . '.css');
 
         return $stylesheets;
