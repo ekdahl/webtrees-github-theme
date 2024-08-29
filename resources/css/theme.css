@@ -325,6 +325,22 @@ table {
     --bs-btn-active-border-color: var(--button-default-borderColor-active);
 }
 
+[dir] span.twitter-typeahead .tt-dropdown-menu, [dir] span.twitter-typeahead .tt-menu {
+    background-color: var(--overlay-bgColor);
+    border: 1px solid var(--bs-border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-floating-small);
+    color: var(--fgColor-default);
+}
+
+span.twitter-typeahead .tt-suggestion {
+    color: var(--fgColor-muted);
+}
+
+[dir] .dropdown-item.active:focus, [dir] .dropdown-item.active:hover, [dir] span.twitter-typeahead .active.tt-suggestion, [dir] span.twitter-typeahead .active.tt-suggestion:focus, [dir] span.twitter-typeahead .active.tt-suggestion:hover, [dir] span.twitter-typeahead .tt-suggestion.tt-cursor, [dir] span.twitter-typeahead .tt-suggestion.tt-cursor:focus, [dir] span.twitter-typeahead .tt-suggestion.tt-cursor:hover {
+    background-color: var(--control-transparent-bgColor-hover);
+}
+
 [dir] table.faq, [dir] table.faq tr:nth-child(odd) td, [dir] div.faq_title {
     background-color: transparent;
 }
