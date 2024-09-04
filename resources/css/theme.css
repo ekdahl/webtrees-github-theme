@@ -51,6 +51,7 @@
     --bs-nav-tabs-link-active-color: var(--fgColor-default);
     --bs-secondary-color: var(--fgColor-muted);
     --bs-secondary-bg: var(--bs-body-bg);
+    --bs-tertiary-bg: var(--button-default-bgColor-rest);
     --link-color: var(--bs-link-color);
     --link-decoration: var(--bs-link-decoration);
     --link-color-hover: var(--fgColor-accent);
@@ -457,7 +458,7 @@ input {
     content: "\e533";
 }
 
-.card-body.wt-block-content.wt-block-content-gedcom_block a i::before, .icon-indis, .icon-pedigree {
+.card-body.wt-block-content.wt-block-content-gedcom_block a i::before, .icon-indis, .wt-block-content-gedcom_block .icon-pedigree {
     font-family: 'Font Awesome 6 Free';
     font-style: normal;
     font-size: 1.5rem;
