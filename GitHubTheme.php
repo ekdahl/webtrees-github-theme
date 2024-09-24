@@ -5,11 +5,15 @@ declare(strict_types=1);
 namespace GitHub;
 
 use Fisharebest\Webtrees\Auth;
+use Fisharebest\Webtrees\FlashMessages;
 use Fisharebest\Webtrees\I18N;
 use Fisharebest\Webtrees\Menu;
 use Fisharebest\Webtrees\Session;
 use Fisharebest\Webtrees\Tree;
+use Fisharebest\Webtrees\View;
 use Fisharebest\Webtrees\Module\MinimalTheme;
+use Fisharebest\Webtrees\Module\ModuleConfigInterface;
+use Fisharebest\Webtrees\Module\ModuleConfigTrait;
 use Fisharebest\Webtrees\Module\ModuleCustomInterface;
 use Fisharebest\Webtrees\Module\ModuleCustomTrait;
 use Fisharebest\Webtrees\Module\ModuleGlobalInterface;
@@ -18,12 +22,13 @@ use Fisharebest\Webtrees\Validator;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleGlobalInterface {
+class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleGlobalInterface, ModuleConfigInterface {
+    use ModuleConfigTrait;
     use ModuleCustomTrait;
     use ModuleGlobalTrait;
 
     public const CUSTOM_AUTHOR = 'Fredrik Ekdahl';
-    public const CUSTOM_VERSION = '0.0.1';
+    public const CUSTOM_VERSION = '0.0.2';
     public const GITHUB_REPO = 'ekdahl/webtrees-github-theme';
     public const CUSTOM_SUPPORT_URL = 'https://github.com/ekdahl/webtrees-github-theme';
 
@@ -87,6 +92,8 @@ class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
      */
     public function boot(): void
     {
+        // Register a namespace for our views.
+        View::registerNamespace($this->name(), $this->resourcesFolder() . 'views/');
     }
 
     /**
@@ -217,9 +224,51 @@ class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
 
         // We haven't selected one this session? Use the default
         if ($palette === '') {
-            $palette = 'dark';
+            $palette = $this->getPreference('palette', 'dark');
         }
 
         return $palette;
+    }
+
+    /**
+     * @param ServerRequestInterface $request
+     *
+     * @return ResponseInterface
+     */
+    public function getAdminAction(): ResponseInterface
+    {
+        if (Session::get('theme') !== $this->name()) {
+            // We need to register the namespace for this view because the boot didn't run
+            View::registerNamespace($this->name(), $this->resourcesFolder() . 'views/');
+        }
+
+        $this->layout = 'layouts/administration';
+
+        return $this->viewResponse($this->name() . '::settings', [
+            'palette'      => $this->getPreference('palette', 'dark'),
+            'palettes'     => $this->palettes(),
+            'title'        => $this->title()
+        ]);
+    }
+
+    /**
+     * Save the user preference.
+     *
+     * @param ServerRequestInterface $request
+     *
+     * @return ResponseInterface
+     */
+    public function postAdminAction(ServerRequestInterface $request): ResponseInterface
+    {
+        $params = (array) $request->getParsedBody();
+
+        if ($params['save'] === '1') {
+            $this->setPreference('palette', $params['palette']);
+
+            $message = I18N::translate('The preferences for the module “%s” have been updated.', $this->title());
+            FlashMessages::addMessage($message, 'success');
+        }
+
+        return redirect($this->getConfigLink());
     }
 };
