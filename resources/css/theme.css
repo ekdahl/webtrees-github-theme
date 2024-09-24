@@ -372,6 +372,35 @@ input {
     text-decoration: underline;
 }
 
+[dir] #cboxOverlay {
+    background: var(--overlay-backdrop-bgColor);
+}
+
+[dir] #cboxContent {
+    background: var(--overlay-bgColor);
+    border: 1px solid var(--bs-border-color);
+    border-radius: 12px;
+}
+
+[dir] #cboxTitle {
+    background: transparent;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+[dir] #cboxClose, [dir] #cboxNext, [dir] #cboxPrevious, [dir] #cboxSlideshow {
+    color: var(--fg-color-muted);
+    background: transparent;
+    border-radius: 6px;
+    width: 2rem;
+    height: 2rem;
+}
+
+[dir] #cboxClose:hover, [dir] #cboxNext:hover, [dir] #cboxPrevious:hover, [dir] #cboxSlideshow:hover {
+    background-color: var(--button-default-bgColor-hover, var(--color-btn-hover-bg));
+    border-radius: 6px;
+}
+
 .nav-item > .nav-link::before {
     font-family: "Font Awesome 6 Free";
     display: inline-block;
