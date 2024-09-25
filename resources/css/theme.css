@@ -28,6 +28,8 @@
  */
 
 :root {
+    --bs-danger-bg-subtle: var(--bgColor-danger-muted);
+    --bs-danger-border-subtle: var(--borderColor-danger-muted);
     --bs-body-bg: var(--bgColor-default);
     --bs-body-color: var(--fgColor-default);
     --bs-body-font-size: 14px;
