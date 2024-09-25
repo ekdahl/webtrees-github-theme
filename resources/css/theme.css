@@ -62,6 +62,10 @@
     --base-text-weight-semibold: 600;
 }
 
+.wt-initial.active {
+    color: var(--fgColor-onEmphasis);
+}
+
 [dir] .nav-tabs .nav-link.active {
     font-weight: var(--base-text-weight-semibold);
     border: none;
@@ -393,7 +397,7 @@ input {
 }
 
 [dir] #cboxClose, [dir] #cboxNext, [dir] #cboxPrevious, [dir] #cboxSlideshow {
-    color: var(--fg-color-muted);
+    color: var(--fgColor-muted);
     background: transparent;
     border-radius: 6px;
     width: 2rem;
