@@ -37,7 +37,7 @@
     --bs-border-color: var(--borderColor-default);
     --bs-btn-bg: var(--button-default-bgColor-rest);
     --bs-table-border-color: var(--bs-border-color);
-    --bs-dropdown-bg: var(--overlay-bgColor,var(--color-canvas-overlay,#161b22));
+    --bs-dropdown-bg: var(--overlay-bgColor);
     --bs-dropdown-font-size: var(--bs-body-font-size);
     --bs-dropdown-link-active-bg: var(--bs-link-color);
     --bs-emphasis-color: var(--bs-link-color);
@@ -296,8 +296,10 @@ table {
 
 .dropdown-menu {
     font-size: var(--bs-body-font-size);
+    --bs-dropdown-bg: var(--overlay-bgColor);
     --bs-dropdown-link-active-bg: var(--control-transparent-bgColor-selected);
     --bs-dropdown-border-color: var(--bs-border-color);
+    --bs-dropdown-divider-bg: var(--borderColor-muted);
 }
 
 [dir] .btn {
