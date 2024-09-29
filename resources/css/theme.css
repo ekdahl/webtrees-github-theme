@@ -476,6 +476,10 @@ input {
     --content: "\f328";
 }
 
+.nav-item.news-menu a::before {
+    --content: "\f1ea";
+}
+
 .icon-selected {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
