@@ -61,7 +61,6 @@
     --link-color-hover: var(--fgColor-accent);
     --sex-m-bg: var(--data-blue-color-muted);
     --sex-f-bg: var(--data-pink-color-muted);
-    --base-text-weight-semibold: 600;
 }
 
 [dir] .odometer {
