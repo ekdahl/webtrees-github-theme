@@ -64,6 +64,27 @@
     --base-text-weight-semibold: 600;
 }
 
+[dir] .odometer {
+    background: var(--bgColor-neutral-muted);
+}
+
+.odometer {
+    border: var(--borderWidth-thin) solid var(--counter-borderColor);
+    border-radius: 2em;
+    color: var(--fgColor-default);
+    font-family: inherit;
+    font-size: var(--text-body-size-small);
+    font-weight: var(--base-text-weight-medium);
+    padding: 0 6px;
+    text-align: center;
+}
+
+.Counter {
+    display: inline-block;
+    line-height: calc(var(--base-size-20) - var(--borderWidth-thin)*2);
+    min-width: var(--base-size-20);
+}
+
 .wt-initial.active {
     color: var(--fgColor-onEmphasis);
 }
