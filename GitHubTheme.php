@@ -138,7 +138,13 @@ class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
 
         $stylesheets[] = $this->assetUrl('css/theme.css');
         $stylesheets[] = $this->assetUrl('css/icons.css');
-        $stylesheets[] = $this->assetUrl('css/palettes/' . $this->palette() . '.css');
+        $stylesheets[] = $this->assetUrl('css/primer/base/size/size.css');
+        $stylesheets[] = $this->assetUrl('css/primer/base/typography/typography.css');
+        $stylesheets[] = $this->assetUrl('css/primer/functional/size/border.css');
+        $stylesheets[] = $this->assetUrl('css/primer/functional/size/size.css');
+        $stylesheets[] = $this->assetUrl('css/primer/functional/typography/typography.css');
+
+        $stylesheets[] = $this->assetUrl('css/primer/functional/themes/' . $this->palette() . '.css');
 
         return $stylesheets;
     }
