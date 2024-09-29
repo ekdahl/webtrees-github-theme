@@ -37,7 +37,7 @@ class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
      */
     public function title(): string
     {
-        return 'Primer';
+        return 'GitHub';
     }
 
     /**
