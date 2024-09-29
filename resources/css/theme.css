@@ -63,6 +63,10 @@
     --sex-m-bg: var(--data-blue-color-muted);
 }
 
+.wt-footer {
+    font-size: var(--h6-size, 12px) !important;
+}
+
 [dir] .odometer {
     background: var(--bgColor-neutral-muted);
 }
