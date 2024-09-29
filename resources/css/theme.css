@@ -29,16 +29,15 @@
 
 :root {
     --bs-alert-bg: var(--bgColor-danger-emphasis);
-    --bs-danger-text-emphasis: var(--fgColor-danger);
-    --bs-danger-bg-subtle: var(--bgColor-danger-muted);
-    --bs-danger-border-subtle: var(--borderColor-danger-muted);
     --bs-body-bg: var(--bgColor-default);
     --bs-body-color: var(--fgColor-default);
     --bs-body-font-size: 14px;
-    --bs-border-radius: 6px;
     --bs-border-color: var(--borderColor-default);
+    --bs-border-radius: 6px;
     --bs-btn-bg: var(--button-default-bgColor-rest);
-    --bs-table-border-color: var(--bs-border-color);
+    --bs-danger-bg-subtle: var(--bgColor-danger-muted);
+    --bs-danger-border-subtle: var(--borderColor-danger-muted);
+    --bs-danger-text-emphasis: var(--fgColor-danger);
     --bs-dropdown-bg: var(--overlay-bgColor);
     --bs-dropdown-font-size: var(--bs-body-font-size);
     --bs-dropdown-link-active-bg: var(--bs-link-color);
@@ -46,21 +45,22 @@
     --bs-font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     --bs-form-check-bg: var(--control-checked-bgColor-rest);
     --bs-heading-color: var(--bs-body-color);
-    --dt-html-background: var(--bs-body-bg);
     --bs-link-color: var(--fgColor-default);
     --bs-link-decoration: none;
     --bs-link-hover-color: var(--fgColor-accent);
     --bs-link-hover-decoration: underline;
     --bs-nav-link-font-size: var(--bs-body-font-size);
     --bs-nav-tabs-link-active-color: var(--fgColor-default);
-    --bs-secondary-color: var(--fgColor-muted);
     --bs-secondary-bg: var(--bs-body-bg);
+    --bs-secondary-color: var(--fgColor-muted);
+    --bs-table-border-color: var(--bs-border-color);
     --bs-tertiary-bg: var(--button-default-bgColor-rest);
+    --dt-html-background: var(--bs-body-bg);
+    --link-color-hover: var(--fgColor-accent);
     --link-color: var(--bs-link-color);
     --link-decoration: var(--bs-link-decoration);
-    --link-color-hover: var(--fgColor-accent);
-    --sex-m-bg: var(--data-blue-color-muted);
     --sex-f-bg: var(--data-pink-color-muted);
+    --sex-m-bg: var(--data-blue-color-muted);
 }
 
 [dir] .odometer {
