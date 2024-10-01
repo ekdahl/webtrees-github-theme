@@ -1,0 +1,33 @@
+/*
+ * Fan chart by Rico Sonntag
+ */
+
+.webtrees-fan-chart-container svg g.person g.arc path {
+    fill: var(--bgColor-transparent) !important;
+    stroke: var(--borderColor-muted) !important;
+}
+
+.webtrees-fan-chart-container svg g.person.available g.arc path {
+    fill: var(--bgColor-muted) !important;
+}
+
+.webtrees-fan-chart-container svg .wt-chart-box-name {
+    fill: var(--fgColor-default) !important;
+}
+
+.webtrees-fan-chart-container svg g.name .date {
+    fill: var(--fgColor-neutral) !important;
+}
+
+.webtrees-fan-chart-container svg g.person g.color path.female {
+    fill: var(--data-pink-color-emphasis) !important;
+}
+
+.webtrees-fan-chart-container svg g.person g.color path.male {
+    fill: var(--data-blue-color-emphasis) !important;
+}
+
+.webtrees-fan-chart-container svg g.person g.color path.unknown {
+    fill: var(--data-gray-color-emphasis) !important;
+}
+
