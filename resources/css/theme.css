@@ -63,6 +63,14 @@
     --sex-m-bg: var(--data-blue-color-muted);
 }
 
+[dir] .wt-facts-table .wt-sex-f td {
+    background-color: var(--sex-f-bg);
+}
+
+[dir] .wt-facts-table .wt-sex-m td {
+    background-color: var(--sex-m-bg);
+}
+
 .wt-footer {
     font-size: var(--h6-size, 12px) !important;
 }
@@ -213,7 +221,6 @@ input[type="search"] {
 }
 
 [dir] .wt-facts-table td {
-    background-color: transparent;
     border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
 }
 
