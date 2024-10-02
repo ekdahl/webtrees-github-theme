@@ -63,6 +63,10 @@
     --sex-m-bg: var(--data-blue-color-muted);
 }
 
+input[type="range"] {
+    accent-color: var(--control-checked-bgColor-rest);
+}
+
 [dir] .wt-facts-table .wt-sex-f td {
     background-color: var(--sex-f-bg);
 }
