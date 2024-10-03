@@ -165,18 +165,15 @@ input[type="range"] {
 }
 
 [dir] .form-check-input {
-    background-color: var(--control-checked-bgColor-disabled);
-    border: var(--bs-border-width) solid var(--control-checked-borderColor-disabled);
+    color: var(--fgColor-default);
+    background-color: var(--bgColor-default);
+    border: var(--borderWidth-thin) solid var(--control-borderColor-rest, var(--color-border-default));
 }
 
 [dir] .form-check-input:checked {
-    background-color: var(--selection-bgColor);
-    border-color: var(--control-checked-borderColor-rest);
-}
-
-[dir] .form-check-input:hover {
-    background-color: var(--control-checked-bgColor-hover);
-    border-color: var(--control-checked-borderColor-hover);
+    background-color: var(--control-checked-bgColor-rest, var(--color-accent-fg));
+    border-color: var(--control-checked-borderColor-rest, var(--color-accent-fg));
+    transition: background-color, border-color 80ms cubic-bezier(0.32, 0, 0.67, 0) 0ms;
 }
 
 input[type="search"] {
