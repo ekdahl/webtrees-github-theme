@@ -60,7 +60,9 @@
     --link-color: var(--bs-link-color);
     --link-decoration: var(--bs-link-decoration);
     --sex-f-bg: var(--data-pink-color-muted);
+    --sex-f-fg: var(--data-pink-color-emphasis);
     --sex-m-bg: var(--data-blue-color-muted);
+    --sex-m-fg: var(--data-blue-color-emphasis);
 }
 
 input[type="range"] {
