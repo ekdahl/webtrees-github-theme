@@ -69,6 +69,10 @@
     --sex-x-fg: var(--data-gray-color-emphasis);
 }
 
+[dir] .form-control:focus, [dir] .form-select:focus {
+    border-color: var(--focus-outlineColor);
+    box-shadow: 0 0 0 2px var(--focus-outlineColor);
+}
 
 /* Workaround for bug in minimal theme, delete when corrected */
 .wt-icon-sex-f {
