@@ -146,6 +146,11 @@ input[type="range"] {
     color: var(--control-fgColor-rest);
 }
 
+.dropdown-item.active:focus, .dropdown-item.active:hover, span.twitter-typeahead .active.tt-suggestion, span.twitter-typeahead .active.tt-suggestion:focus, span.twitter-typeahead .active.tt-suggestion:hover, span.twitter-typeahead .tt-suggestion.tt-cursor, span.twitter-typeahead .tt-suggestion.tt-cursor:focus, span.twitter-typeahead .tt-suggestion.tt-cursor:hover {
+    background-color: var(--control-transparent-bgColor-selected);
+    color: var(--control-fgColor-rest);
+}
+
 [dir] .form-control {
     background-color: var(--bgColor-muted, var(--color-canvas-inset));
     font-size: var(--bs-body-font-size);
