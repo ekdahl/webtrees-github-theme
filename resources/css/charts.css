@@ -32,3 +32,16 @@
     fill: var(--data-gray-color-emphasis) !important;
 }
 
+/*
+ * Timeline
+ */
+
+[dir] .person0 {
+    color: var(--fgColor-default);
+    background-color: var(--bgColor-muted);
+}
+
+[dir] .person0, [dir] .person1, [dir] .person2, [dir] .person3, [dir] .person4, [dir] .person5 {
+    border: var(--borderWidth-thin) solid var(--borderColor-emphasis);
+    border-radius: var(--borderRadius-medium);
+}

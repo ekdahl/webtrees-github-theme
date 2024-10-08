@@ -63,6 +63,25 @@
     --sex-f-fg: var(--data-pink-color-emphasis);
     --sex-m-bg: var(--data-blue-color-muted);
     --sex-m-fg: var(--data-blue-color-emphasis);
+    --sex-u-bg: var(--data-gray-color-muted);
+    --sex-u-fg: var(--data-gray-color-emphasis);
+    --sex-x-bg: var(--data-gray-color-muted);
+    --sex-x-fg: var(--data-gray-color-emphasis);
+}
+
+
+/* Workaround for bug in minimal theme, delete when corrected */
+.wt-icon-sex-f {
+    color: var(--sex-f-fg);
+}
+
+.wt-icon-sex-x {
+    color: var(--sex-x-fg);
+}
+
+[dir] .badge.bg-secondary {
+    --bs-badge-color: var(--fgColor-default);
+    background-color: var(--bgColor-neutral-muted) !important;
 }
 
 input[type="range"] {
