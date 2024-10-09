@@ -69,6 +69,14 @@
     --sex-x-fg: var(--data-gray-color-emphasis);
 }
 
+.pagination {
+    --bs-pagination-active-color: var(--fgColor-onEmphasis);
+    --bs-pagination-active-bg: var(--bgColor-accent-emphasis);
+    --bs-pagination-active-border-color: var(--focus-outlineColor);
+    --bs-pagination-disabled-color: var(--fgColor-disabled);
+    --bs-pagination-focus-box-shadow: none;
+}
+
 [dir] .form-control:focus, [dir] .form-select:focus {
     border-color: var(--focus-outlineColor);
     box-shadow: 0 0 0 2px var(--focus-outlineColor);
