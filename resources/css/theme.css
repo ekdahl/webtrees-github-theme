@@ -44,6 +44,9 @@
     --bs-emphasis-color: var(--bs-link-color);
     --bs-font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     --bs-form-check-bg: var(--control-checked-bgColor-rest);
+    --bs-info-bg-subtle: var(--bgColor-accent-muted);
+    --bs-info-border-subtle: var(--borderColor-accent-muted);
+    --bs-info-text-emphasis: var(--fgColor-default);
     --bs-heading-color: var(--bs-body-color);
     --bs-link-color: var(--fgColor-default);
     --bs-link-decoration: none;
@@ -67,6 +70,10 @@
     --sex-u-fg: var(--data-gray-color-emphasis);
     --sex-x-bg: var(--data-gray-color-muted);
     --sex-x-fg: var(--data-gray-color-emphasis);
+}
+
+.alert-info {
+    --bs-alert-link-color: var(--fgColor-link);
 }
 
 .pagination {
