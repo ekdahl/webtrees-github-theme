@@ -121,6 +121,8 @@ input[type="range"] {
 
 .wt-footer {
     font-size: var(--h6-size, 12px) !important;
+    color: var(--fgColor-muted);
+    --link-color: var(--fgColor-muted);
 }
 
 [dir] .odometer {
