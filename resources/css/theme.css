@@ -72,6 +72,10 @@
     --sex-x-fg: var(--data-gray-color-emphasis);
 }
 
+.wt-header-container {
+    max-width: none;
+}
+
 .alert-info {
     --bs-alert-link-color: var(--fgColor-link);
 }
