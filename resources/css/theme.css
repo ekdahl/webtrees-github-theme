@@ -73,6 +73,10 @@
     --sex-x-fg: var(--data-gray-color-emphasis);
 }
 
+.wt-statistics-chart .d-grid .card-body svg > g > rect {
+    fill: transparent;
+}
+
 .wt-statistics-chart .card-body svg g path {
     stroke: var(--borderColor-muted);
 }
