@@ -33,6 +33,7 @@
     --bs-body-color: var(--fgColor-default);
     --bs-body-font-size: 14px;
     --bs-border-color: var(--borderColor-default);
+    --bs-border-color-translucent: var(--borderColor-translucent);
     --bs-border-radius: 6px;
     --bs-btn-bg: var(--button-default-bgColor-rest);
     --bs-danger-bg-subtle: var(--bgColor-danger-muted);
@@ -70,6 +71,22 @@
     --sex-u-fg: var(--data-gray-color-emphasis);
     --sex-x-bg: var(--data-gray-color-muted);
     --sex-x-fg: var(--data-gray-color-emphasis);
+}
+
+.wt-statistics-chart .card-body svg g path {
+    stroke: var(--borderColor-muted);
+}
+
+.wt-statistics-chart .card-body svg g g text {
+    fill: var(--fgColor-muted);
+}
+
+.wt-statistics-chart .card-body svg g g path {
+    stroke: var(--borderColor-emphasis);
+}
+
+.wt-statistics-chart .card-body svg g g circle {
+    fill: var(--borderColor-emphasis);
 }
 
 .wt-header-container {
