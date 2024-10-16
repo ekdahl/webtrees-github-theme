@@ -82,7 +82,7 @@
 }
 
 .wt-statistics-chart .card-body svg g g text {
-    fill: var(--fgColor-muted);
+    fill: var(--fgColor-default);
 }
 
 .wt-statistics-chart .card-body svg g g path {
