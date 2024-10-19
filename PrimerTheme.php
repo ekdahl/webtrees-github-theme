@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace GitHub;
+namespace Primer;
 
 use Fisharebest\Webtrees\Auth;
 use Fisharebest\Webtrees\FlashMessages;
@@ -22,22 +22,22 @@ use Fisharebest\Webtrees\Validator;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleGlobalInterface, ModuleConfigInterface {
+class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleGlobalInterface, ModuleConfigInterface {
     use ModuleConfigTrait;
     use ModuleCustomTrait;
     use ModuleGlobalTrait;
 
     public const CUSTOM_AUTHOR = 'Fredrik Ekdahl';
-    public const CUSTOM_VERSION = '0.0.2';
-    public const GITHUB_REPO = 'ekdahl/webtrees-github-theme';
-    public const CUSTOM_SUPPORT_URL = 'https://github.com/ekdahl/webtrees-github-theme';
+    public const CUSTOM_VERSION = '1.0.0';
+    public const GITHUB_REPO = 'ekdahl/webtrees-primer-theme';
+    public const CUSTOM_SUPPORT_URL = 'https://github.com/ekdahl/webtrees-primer-theme';
 
     /**
      * @return string
      */
     public function title(): string
     {
-        return 'GitHub';
+        return 'Primer';
     }
 
     /**
@@ -168,7 +168,7 @@ class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
             $submenu = new Menu(
                 $palette_name,
                 '#',
-                'menu-github-' . $palette_id . ($palette === $palette_id ? ' active' : ''),
+                'menu-primer-' . $palette_id . ($palette === $palette_id ? ' active' : ''),
                 [
                     'data-wt-post-url' => $url,
                 ]
@@ -192,9 +192,9 @@ class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
         $user    = Validator::attributes($request)->user();
         $palette = Validator::queryParams($request)->isInArrayKeys($this->palettes())->string('palette');
 
-        $user->setPreference('github-palette', $palette);
+        $user->setPreference('primer-palette', $palette);
 
-        Session::put('github-palette', $palette);
+        Session::put('primer-palette', $palette);
 
         return response();
     }
@@ -221,11 +221,11 @@ class GitHubTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
     private function palette(): string
     {
         // If we are logged in, use our preference
-        $palette = Auth::user()->getPreference('github-palette');
+        $palette = Auth::user()->getPreference('primer-palette');
 
         // If not logged in or no preference, use one we selected earlier in the session.
         if ($palette === '') {
-            $palette = Session::get('github-palette');
+            $palette = Session::get('primer-palette');
             $palette = is_string($palette) ? $palette : '';
         }
 

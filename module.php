@@ -1,13 +1,13 @@
 <?php
 
 /**
- * GitHub theme.
+ * Primer theme.
  */
 
 declare(strict_types=1);
 
-namespace GitHub;
+namespace Primer;
 
-require __DIR__ . '/GitHubTheme.php';
+require __DIR__ . '/PrimerTheme.php';
 
-return new GitHubTheme();
+return new PrimerTheme();
