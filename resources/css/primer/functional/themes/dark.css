@@ -1,3 +1,8 @@
+/* To get dark input controls */
+:root {
+	color-scheme: dark;
+}
+
 :root {
 	--topicTag-borderColor: #00000000;
 	--highlight-neutral-bgColor: #d2992266;
