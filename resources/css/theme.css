@@ -404,9 +404,10 @@ table {
 
 [dir] .btn {
     font-weight: 500;
+    --bs-btn-bg: var(--button-default-bgColor-rest);
 }
 
-.btn-primary {
+[dir] .btn-primary {
     --bs-btn-color: var(--button-primary-fgColor-rest);
     --bs-btn-hover-color: var(--button-primary-fgColor-rest);
     --bs-btn-active-color: var(--button-primary-fgColor-rest);
@@ -418,16 +419,35 @@ table {
     --bs-btn-active-border-color: var(--button-primary-borderColor-active);
 }
 
-.btn-secondary {
-    --bs-btn-color: var(--button-default-fgColor-rest, var(--color-btn-text));
+[dir] .btn-secondary {
+    --bs-btn-color: var(--button-default-fgColor-rest);
     --bs-btn-hover-color: var(--button-default-fgColor-rest);
-    --bs-btn-active-color: var(--button-default-bgColor-active);
+    --bs-btn-active-color: var(--button-default-fgColor-rest);
     --bs-btn-bg: var(--button-default-bgColor-rest);
     --bs-btn-hover-bg: var(--button-default-bgColor-hover);
     --bs-btn-active-bg: var(--button-default-bgColor-active);
-    --bs-btn-border-color: var(--button-default-borderColor-rest, var(--color-btn-border));
+    --bs-btn-border-color: var(--button-default-borderColor-rest);
     --bs-btn-hover-border-color: var(--button-default-borderColor-hover);
     --bs-btn-active-border-color: var(--button-default-borderColor-active);
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: var(--button-default-fgColor-rest);
+    --bs-btn-border-color: var(--button-default-borderColor-rest);
+    --bs-btn-hover-color: var(--button-default-fgColor-rest);
+    --bs-btn-hover-bg: var(--button-default-bgColor-hover);
+    --bs-btn-hover-border-color: var(--button-default-borderColor-hover);
+    --bs-btn-active-color: var(--button-default-fgColor-rest);
+    --bs-btn-active-bg: var(--button-default-bgColor-active);
+    --bs-btn-active-border-color: var(--button-default-borderColor-active);
+    --bs-btn-active-shadow: var(--button-default-shadow-resting);
+    --bs-btn-disabled-color: var(--button-inactive-fgColor);
+    --bs-btn-disabled-bg: var(--button-inactive-bgColor);
+    --bs-btn-disabled-border-color: var(--button-default-borderColor-disabled);
+}
+
+a.btn.btn-outline-secondary:hover {
+    text-decoration: none;
 }
 
 [dir] span.twitter-typeahead .tt-dropdown-menu, [dir] span.twitter-typeahead .tt-menu {
