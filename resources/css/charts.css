@@ -45,3 +45,27 @@
     border: var(--borderWidth-thin) solid var(--borderColor-emphasis);
     border-radius: var(--borderRadius-medium);
 }
+
+/*
+ * Statistics chart
+ */
+
+.wt-statistics-chart .d-grid .card-body svg > g > rect {
+    fill: transparent;
+}
+
+.wt-statistics-chart .card-body svg g path {
+    stroke: var(--borderColor-muted);
+}
+
+.wt-statistics-chart .card-body svg g g text {
+    fill: var(--fgColor-default);
+}
+
+.wt-statistics-chart .card-body svg g g path {
+    stroke: var(--borderColor-emphasis);
+}
+
+.wt-statistics-chart .card-body svg g g circle {
+    fill: var(--borderColor-emphasis);
+}
