@@ -16,6 +16,7 @@
     margin-right: 5px;
     color: var(--fgColor-muted);
     content: var(--content);
+    font-size: var(--base-size-16);
 }
 
 /* Top menu */

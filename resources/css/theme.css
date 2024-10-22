@@ -453,6 +453,7 @@ a.btn.btn-outline-secondary:hover {
 [dir] .btn.btn-link {
     --bs-btn-bg: transparent;
     --bs-btn-hover-bg: var(--control-transparent-bgColor-hover);
+    font-size: var(--base-size-16);
 }
 
 [dir] a.btn.btn-link:hover {
