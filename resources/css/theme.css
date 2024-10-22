@@ -31,10 +31,10 @@
     --bs-alert-bg: var(--bgColor-danger-emphasis);
     --bs-body-bg: var(--bgColor-default);
     --bs-body-color: var(--fgColor-default);
-    --bs-body-font-size: 14px;
+    --bs-body-font-size: var(--body-font-size);
     --bs-border-color: var(--borderColor-default);
     --bs-border-color-translucent: var(--borderColor-translucent);
-    --bs-border-radius: 6px;
+    --bs-border-radius: var(--borderRadius-default);
     --bs-btn-bg: var(--button-default-bgColor-rest);
     --bs-danger-bg-subtle: var(--bgColor-danger-muted);
     --bs-danger-border-subtle: var(--borderColor-danger-muted);
@@ -43,7 +43,7 @@
     --bs-dropdown-font-size: var(--bs-body-font-size);
     --bs-dropdown-link-active-bg: var(--bs-link-color);
     --bs-emphasis-color: var(--bs-link-color);
-    --bs-font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --bs-font-sans-serif: var(--fontStack-sansSerif);
     --bs-form-check-bg: var(--control-checked-bgColor-rest);
     --bs-info-bg-subtle: var(--bgColor-accent-muted);
     --bs-info-border-subtle: var(--borderColor-accent-muted);
@@ -503,7 +503,7 @@ input {
 [dir] #cboxContent {
     background: var(--overlay-bgColor);
     border: 1px solid var(--bs-border-color);
-    border-radius: 12px;
+    border-radius: var(--borderRadius-large);
 }
 
 [dir] #cboxTitle {
@@ -515,12 +515,12 @@ input {
 [dir] #cboxClose, [dir] #cboxNext, [dir] #cboxPrevious, [dir] #cboxSlideshow {
     color: var(--fgColor-muted);
     background: transparent;
-    border-radius: 6px;
+    border-radius: var(--borderRadius-medium);
     width: 2rem;
     height: 2rem;
 }
 
 [dir] #cboxClose:hover, [dir] #cboxNext:hover, [dir] #cboxPrevious:hover, [dir] #cboxSlideshow:hover {
-    background-color: var(--button-default-bgColor-hover, var(--color-btn-hover-bg));
-    border-radius: 6px;
+    background-color: var(--button-default-bgColor-hover);
+    border-radius: var(--borderRadius-medium);
 }
