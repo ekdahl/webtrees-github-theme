@@ -73,6 +73,10 @@
     --sex-x-fg: var(--data-gray-color-emphasis);
 }
 
+.form-select {
+    font-size: var(--body-font-size);
+}
+
 .wt-header-container {
     max-width: none;
 }
@@ -405,6 +409,7 @@ table {
 [dir] .btn {
     font-weight: 500;
     --bs-btn-bg: var(--button-default-bgColor-rest);
+    --bs-btn-font-size: var(--body-font-size);
 }
 
 [dir] .btn-primary {
