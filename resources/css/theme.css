@@ -450,6 +450,15 @@ a.btn.btn-outline-secondary:hover {
     text-decoration: none;
 }
 
+[dir] .btn.btn-link {
+    --bs-btn-bg: transparent;
+    --bs-btn-hover-bg: var(--control-transparent-bgColor-hover);
+}
+
+[dir] a.btn.btn-link:hover {
+    color: var(--link-color);
+}
+
 [dir] span.twitter-typeahead .tt-dropdown-menu, [dir] span.twitter-typeahead .tt-menu {
     background-color: var(--overlay-bgColor);
     border: 1px solid var(--bs-border-color);
