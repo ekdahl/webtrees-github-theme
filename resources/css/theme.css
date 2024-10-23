@@ -73,6 +73,10 @@
     --sex-x-fg: var(--data-gray-color-emphasis);
 }
 
+.wt-user-menu {
+    flex-wrap: wrap;
+}
+
 .form-select {
     font-size: var(--body-font-size);
 }
