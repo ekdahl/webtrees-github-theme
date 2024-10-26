@@ -272,7 +272,7 @@ class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
         if ($params['save'] === '1') {
             $this->setPreference('palette', $params['palette']);
 
-            $message = I18N::translate('The preferences for the module “%s” have been updated.', $this->title());
+            $message = I18N::translate('The preferences for the module â€œ%sâ€ have been updated.', $this->title());
             FlashMessages::addMessage($message, 'success');
         }
 
