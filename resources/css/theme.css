@@ -163,7 +163,7 @@ input[type="range"] {
     font-weight: var(--base-text-weight-semibold);
     border: none;
     border-bottom-color: var(--underlineNav-borderColor-active);
-    border-bottom-width: 2px;
+    border-bottom-width: var(--borderWidth-thick);
     border-bottom-style: solid;
 }
 
@@ -203,11 +203,11 @@ input[type="range"] {
 }
 
 .wt-site-title {
-    font-size: 14px;
+    font-size: var(--body-font-size);
 }
 
 .wt-page-title {
-    font-size: 20px;
+    font-size: var(--h3-size);
 }
 
 .wt-genealogy-menu {
@@ -217,7 +217,7 @@ input[type="range"] {
 [dir] .wt-global, [dir] ::backdrop {
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
-    font-size: 14px;
+    font-size: var(--body-font-size);
 }
 
 .wt-global, ::backdrop {
@@ -259,7 +259,7 @@ input[type="search"] {
 }
 
 [dir] .wt-primary-navigation {
-    border-bottom-width: 1px;
+    border-bottom-width: var(--borderWidth-thin);
     border-color: var(--bs-border-color);
 }
 
@@ -362,7 +362,7 @@ table {
 }
 
 [dir] .wt-facts-table label {
-    margin-right: 0.5em;
+    margin-right: var(--base-size-8);
 }
 
 .nav-link:hover {
@@ -471,8 +471,8 @@ a.btn.btn-outline-secondary:hover {
 
 [dir] span.twitter-typeahead .tt-dropdown-menu, [dir] span.twitter-typeahead .tt-menu {
     background-color: var(--overlay-bgColor);
-    border: 1px solid var(--bs-border-color);
-    border-radius: 12px;
+    border: var(--borderWidth-thin) solid var(--bs-border-color);
+    border-radius: var(--borderRadius-large);
     box-shadow: var(--shadow-floating-small);
     color: var(--fgColor-default);
 }
@@ -521,22 +521,22 @@ input {
 
 [dir] #cboxContent {
     background: var(--overlay-bgColor);
-    border: 1px solid var(--bs-border-color);
+    border: var(--borderWidth-thin) solid var(--bs-border-color);
     border-radius: var(--borderRadius-large);
 }
 
 [dir] #cboxTitle {
     background: transparent;
-    height: 2rem;
-    line-height: 2rem;
+    height: var(--base-size-32);
+    line-height: var(--base-size-32);
 }
 
 [dir] #cboxClose, [dir] #cboxNext, [dir] #cboxPrevious, [dir] #cboxSlideshow {
     color: var(--fgColor-muted);
     background: transparent;
     border-radius: var(--borderRadius-medium);
-    width: 2rem;
-    height: 2rem;
+    width: var(--base-size-32);
+    height: var(--base-size-32);
 }
 
 [dir] #cboxClose:hover, [dir] #cboxNext:hover, [dir] #cboxPrevious:hover, [dir] #cboxSlideshow:hover {
