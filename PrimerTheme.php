@@ -124,6 +124,13 @@ class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
                 font-weight: 900;
                 font-display: block;
             }
+            @font-face {
+                font-family: \'icomoon\';
+                src: url("' . $this->assetUrl('fonts/icomoon.woff') . '") format("woff");
+                font-style: normal;
+                font-weight: normal;
+                font-display: block;
+            }
             </style>';
     }
 
@@ -146,6 +153,7 @@ class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
         $stylesheets[] = $this->assetUrl('css/primer/functional/themes/' . $this->palette() . '.css');
         $stylesheets[] = $this->assetUrl('css/primer/functional/typography/typography.css');
         $stylesheets[] = $this->assetUrl('css/primer/primitives/temp-typography-tokens.css');
+        $stylesheets[] = $this->assetUrl('css/site-logo-' . $this->getPreference('logo', 'people') . '.css');
 
         return $stylesheets;
     }
@@ -237,6 +245,19 @@ class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
         return $palette;
     }
 
+     /**
+     * @return array<string>
+     */
+    private function logos(): array
+    {
+        $logos = [
+            'people'   => I18N::translate('People'),
+            'webtrees' => I18N::translate('webtrees'),
+        ];
+
+        return $logos;
+    }
+
     /**
      * @param ServerRequestInterface $request
      *
@@ -254,7 +275,9 @@ class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
         return $this->viewResponse($this->name() . '::settings', [
             'palette'      => $this->getPreference('palette', 'dark'),
             'palettes'     => $this->palettes(),
-            'title'        => $this->title()
+            'title'        => $this->title(),
+            'logo'    => $this->getPreference('logo', 'people'),
+            'logos'   => $this->logos(),
         ]);
     }
 
@@ -271,7 +294,7 @@ class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
 
         if ($params['save'] === '1') {
             $this->setPreference('palette', $params['palette']);
-
+            $this->setPreference('logo', $params['logo']);
             $message = I18N::translate('The preferences for the module “%s” have been updated.', $this->title());
             FlashMessages::addMessage($message, 'success');
         }

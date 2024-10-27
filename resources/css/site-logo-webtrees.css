@@ -1,0 +1,9 @@
+/* Site icon */
+.wt-site-title::before {
+    font-family: "icomoon";
+    font-size: 32px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 1rem;
+    content: "\e900";
+}
