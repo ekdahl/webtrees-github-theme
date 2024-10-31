@@ -73,6 +73,24 @@
     --sex-x-fg: var(--data-gray-color-emphasis);
 }
 
+@media (min-width: 992px) {
+    .container-lg {
+        max-width: inherit;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-lg {
+        max-width: inherit;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-lg {
+        max-width: 1400px;
+    }
+}
+
 .wt-user-menu {
     flex-wrap: wrap;
 }
