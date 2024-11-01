@@ -31,6 +31,7 @@ class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
     public const CUSTOM_VERSION = '1.1.0';
     public const GITHUB_REPO = 'ekdahl/webtrees-primer-theme';
     public const CUSTOM_SUPPORT_URL = 'https://github.com/ekdahl/webtrees-primer-theme';
+    public const CUSTOM_LATEST_VERSION = 'https://raw.githubusercontent.com/' . self::GITHUB_REPO . '/main/latest-version.txt';
 
     /**
      * @return string
@@ -65,6 +66,15 @@ class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
     public function customModuleSupportUrl(): string
     {
         return self::CUSTOM_SUPPORT_URL;
+    }
+
+    /**
+     * {@inheritDoc}
+     * @see \Fisharebest\Webtrees\Module\ModuleCustomInterface::customModuleLatestVersionUrl()
+     */
+    public function customModuleLatestVersionUrl(): string
+    {
+        return self::CUSTOM_LATEST_VERSION;
     }
 
     /**
