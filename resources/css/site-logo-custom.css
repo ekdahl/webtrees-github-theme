@@ -1,0 +1,15 @@
+/* Site icon */
+.wt-site-title::before {
+    font-family: "icomoon";
+    font-size: 32px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 1rem;
+    content: url(../public/website_logo_65.png);
+}
+.wt-site-title {
+    font-size: 30px;
+    color: #347D39 !important;
+    text-shadow: -1px -1px 0 #C5D1DE, 1px -1px 0 #C5D1DE, -1px 1px 0 #C5D1DE, 1px 1px 0 #C5D1DE;
+    letter-spacing: 2px;
+}
