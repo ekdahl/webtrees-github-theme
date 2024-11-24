@@ -120,15 +120,6 @@
     box-shadow: 0 0 0 2px var(--focus-outlineColor);
 }
 
-/* Workaround for bug in minimal theme, delete when corrected */
-.wt-icon-sex-f {
-    color: var(--sex-f-fg);
-}
-
-.wt-icon-sex-x {
-    color: var(--sex-x-fg);
-}
-
 [dir] .badge.bg-secondary {
     --bs-badge-color: var(--fgColor-default);
     background-color: var(--bgColor-neutral-muted) !important;
