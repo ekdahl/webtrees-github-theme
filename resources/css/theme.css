@@ -282,7 +282,7 @@ input[type="search"] {
 
 [dir] .wt-facts-table tr > * {
     border: none;
-    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
     color: var(--bs-body-color);
 }
 
