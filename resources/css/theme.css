@@ -316,6 +316,18 @@ input[type="search"] {
     border-bottom-right-radius: var(--bs-border-radius);
 }
 
+[dir] .wt-tab-relatives .wt-facts-table tr:first-child .wt-chart-box {
+    border-top-right-radius: var(--bs-border-radius);
+}
+
+[dir] .wt-tab-relatives .wt-facts-table tr:not(:first-child) .wt-chart-box {
+    border-top: none;
+}
+
+[dir] .wt-tab-relatives .wt-facts-table .wt-chart-box {
+    border-left: none;
+}
+
 table {
     border-color: var(--bs-border-color);
     border-spacing: 0px;
