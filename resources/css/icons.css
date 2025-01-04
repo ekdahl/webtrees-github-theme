@@ -208,14 +208,14 @@
 
 /* Relatives tab, chart-box pedigree icon */
 
-.wt-tab-relatives .wt-chart-box-links .wt-chart-box-icon .icon-pedigree::before {
+.wt-chart-box-links .wt-chart-box-icon .icon-pedigree::before {
     font-family: 'Font Awesome 6 Free';
     font-style: normal;
     display: inline-block;
     content: '\f0e8';
 }
 
-.wt-tab-relatives .wt-chart-box-links .wt-chart-box-icon .icon-pedigree {
+.wt-chart-box-links .wt-chart-box-icon .icon-pedigree {
     content: none;
 }
 

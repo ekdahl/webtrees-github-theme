@@ -329,8 +329,10 @@ input[type="search"] {
     padding: var(--base-size-4);
 }
 
-[dir] .wt-tab-relatives .wt-facts-table .wt-chart-box .dropdown-menu {
+[dir] .wt-chart-box .wt-chart-box-dropdown {
     background-color: var(--bs-dropdown-bg);
+    border: var(--borderWidth-thin) solid var(--borderColor-muted);
+    border-radius: var(--borderRadius-large);
 }
 
 table {
@@ -375,13 +377,13 @@ table {
     border-color: var(--bs-border-color);
 }
 
-[dir] .wt-chart-box-m, [dir] .wt-chart-box-m .wt-chart-box-dropdown {
+[dir] .wt-chart-box-m {
     background: var(--bs-body-bg);
     background: var(--sex-m-bg);
     border-color: var(--bs-border-color);
 }
 
-[dir] .wt-chart-box-f, [dir] .wt-chart-box-f .wt-chart-box-dropdown {
+[dir] .wt-chart-box-f {
     background: var(--bs-body-bg);
     background: var(--sex-f-bg);
     border-color: var(--bs-border-color);
