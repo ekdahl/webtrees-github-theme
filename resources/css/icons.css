@@ -132,8 +132,10 @@
     content: '\f77c';
 }
 
-.wt-fact-icon-BURI::before,
-.wt-fact-icon-CEME::before,
+.wt-fact-icon-BURI::before {
+    content: '\f51d';
+}
+
 .wt-fact-icon-DEAT::before {
     content: '\f654';
 }
