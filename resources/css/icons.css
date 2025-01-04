@@ -105,6 +105,105 @@
     content: "\f00c\00a0";
 }
 
+/* Fact icons */
+
+.wt-fact-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-size: var(--base-size-24);
+    color: var(--fgColor-muted);
+    display: block;
+    content: none;
+}
+
+.wt-fact-icon-ADDR::before {
+    content: '\f0e0';
+}
+
+.wt-fact-icon-AFN::before,
+.wt-fact-icon-REFN::before,
+.wt-fact-icon-RFN::before,
+.wt-fact-icon-RIN::before,
+.wt-fact-icon-_UID::before {
+    content: '\23';
+}
+
+.wt-fact-icon-BIRT::before {
+    content: '\f77c';
+}
+
+.wt-fact-icon-BURI::before,
+.wt-fact-icon-CEME::before,
+.wt-fact-icon-DEAT::before {
+    content: '\f654';
+}
+
+.wt-fact-icon-CENS::before {
+    content: '\f00b';
+}
+
+.wt-fact-icon-CHAN::before {
+    content: '\f274';
+}
+
+.wt-fact-icon-CHR::before,
+.wt-fact-icon-BAPL::before,
+.wt-fact-icon-BAPM::before {
+    content: '\f4ba';
+}
+
+.wt-fact-icon-EMAIL::before {
+    content: '\40';
+}
+
+.wt-fact-icon-EVEN::before {
+    content: '\f133';
+}
+
+.wt-fact-icon-FACT::before {
+    content: '\f129';
+}
+
+.wt-fact-icon-GRAD::before {
+    content: '\f501';
+}
+
+.wt-fact-icon-MARR::before,
+.wt-fact-icon-SLGS::before,
+.wt-fact-icon-ENGA::before,
+.wt-fact-icon-MARB::before {
+    content: '\f70b';
+}
+
+.wt-fact-icon-OCCU::before {
+    content: '\f6e3';
+}
+
+.wt-fact-icon-PHON::before {
+    content: 'f095';
+}
+
+.wt-fact-icon-PROP::before,
+.wt-fact-icon-RESI::before {
+    content: '\e065';
+}
+
+.wt-fact-icon-WWW::before {
+    content: '\f0ac';
+}
+
+.wt-fact-icon-_FSFTID::before {
+    content: '\f2c2';
+}
+
+.wt-fact-icon-_MILI::before {
+    content: '\e54b';
+}
+
+.wt-fact-icon-_TODO::before {
+    content: '\f06a';
+}
+
 /*  */
 
 .card-body.wt-block-content.wt-block-content-gedcom_block a i::before, .icon-indis, .wt-block-content-gedcom_block .icon-pedigree {
