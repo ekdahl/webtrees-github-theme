@@ -206,6 +206,19 @@
     content: '\f06a';
 }
 
+/* Relatives tab, chart-box pedigree icon */
+
+.wt-tab-relatives .wt-chart-box-links .wt-chart-box-icon .icon-pedigree::before {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    display: inline-block;
+    content: '\f0e8';
+}
+
+.wt-tab-relatives .wt-chart-box-links .wt-chart-box-icon .icon-pedigree {
+    content: none;
+}
+
 /*  */
 
 .card-body.wt-block-content.wt-block-content-gedcom_block a i::before, .icon-indis, .wt-block-content-gedcom_block .icon-pedigree {

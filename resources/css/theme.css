@@ -329,6 +329,10 @@ input[type="search"] {
     padding: var(--base-size-4);
 }
 
+[dir] .wt-tab-relatives .wt-facts-table .wt-chart-box .dropdown-menu {
+    background-color: var(--bs-dropdown-bg);
+}
+
 table {
     border-color: var(--bs-border-color);
     border-spacing: 0px;
