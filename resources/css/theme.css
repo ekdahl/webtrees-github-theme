@@ -327,7 +327,6 @@ input[type="search"] {
 [dir] .wt-tab-relatives .wt-facts-table .wt-chart-box {
     border-left: none;
     padding: var(--base-size-4);
-    height: unset;
 }
 
 table {
