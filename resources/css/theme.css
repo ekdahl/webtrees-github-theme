@@ -513,6 +513,16 @@ a.btn.btn-outline-secondary:hover {
     background-color: transparent;
 }
 
+[dir] .wt-block-header .btn-link {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.wt-block-header {
+    height: 2.5rem;
+    align-content: center;
+}
+
 [dir] span.twitter-typeahead .tt-dropdown-menu, [dir] span.twitter-typeahead .tt-menu {
     background-color: var(--overlay-bgColor);
     border: var(--borderWidth-thin) solid var(--bs-border-color);
