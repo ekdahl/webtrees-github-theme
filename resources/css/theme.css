@@ -587,3 +587,7 @@ input {
     background-color: var(--button-default-bgColor-hover);
     border-radius: var(--borderRadius-medium);
 }
+
+.wt-chart-relationships .wt-chart-box {
+    width: 20rem;
+}
