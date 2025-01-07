@@ -219,9 +219,23 @@
     content: none;
 }
 
-/*  */
+/* wt-block-content-gedcom_block/wt-block-content-user_welcome */
 
-.card-body.wt-block-content.wt-block-content-gedcom_block a i::before, .icon-indis, .wt-block-content-gedcom_block .icon-pedigree {
+.wt-block-content-gedcom_block .icon-pedigree,
+.wt-block-content-gedcom_block .icon-indis,
+.wt-block-content-gedcom_block .icon-user_add,
+.wt-block-content-user_welcome .icon-pedigree,
+.wt-block-content-user_welcome .icon-indis,
+.wt-block-content-user_welcome .icon-mypage {
+    content: none;
+}
+
+.wt-block-content-gedcom_block .icon-pedigree::before,
+.wt-block-content-gedcom_block .icon-indis::before,
+.wt-block-content-gedcom_block .icon-user_add::before,
+.wt-block-content-user_welcome .icon-pedigree::before,
+.wt-block-content-user_welcome .icon-indis::before,
+.wt-block-content-user_welcome .icon-mypage::before {
     font-family: 'Font Awesome 6 Free';
     font-style: normal;
     font-size: 1.5rem;
@@ -230,16 +244,22 @@
     display: inline-block;
 }
 
-.wt-block-content-gedcom_block a i.icon-pedigree::before {
+.wt-block-content-gedcom_block .icon-pedigree::before,
+.wt-block-content-user_welcome .icon-pedigree::before {
     --content: '\f0e8';
 }
 
-.wt-block-content-gedcom_block a i.icon-indis::before {
+.wt-block-content-gedcom_block .icon-indis::before,
+.wt-block-content-user_welcome .icon-indis::before {
     --content: '\f007';
 }
 
-.wt-block-content-gedcom_block a i.icon-user_add::before {
+.wt-block-content-gedcom_block .icon-user_add::before {
     --content: '\f234';
+}
+
+.wt-block-content-user_welcome .icon-mypage::before {
+    --content: '\f2bb';
 }
 
 /* Map links */
