@@ -617,3 +617,8 @@ input[type="text"] {
 [dir] .wt-calendar-month .wt-page-options-label, [dir] .wt-calendar-month .wt-page-options-value {
     border: var(--borderWidth-thin) solid var(--bs-border-color);
 }
+
+[dir] .wt-ajax-load:empty {
+    background-image: var(--spinner);
+    height: var(--base-size-36);
+}
