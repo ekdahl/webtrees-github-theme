@@ -28,7 +28,7 @@ class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
     use ModuleGlobalTrait;
 
     public const CUSTOM_AUTHOR = 'Fredrik Ekdahl';
-    public const CUSTOM_VERSION = '1.1.0';
+    public const CUSTOM_VERSION = '1.2.0';
     public const GITHUB_REPO = 'ekdahl/webtrees-primer-theme';
     public const CUSTOM_SUPPORT_URL = 'https://github.com/ekdahl/webtrees-primer-theme';
     public const CUSTOM_LATEST_VERSION = 'https://raw.githubusercontent.com/' . self::GITHUB_REPO . '/main/latest-version.txt';
