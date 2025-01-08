@@ -601,3 +601,19 @@ input {
 .wt-chart-relationships .wt-chart-box {
     width: 20rem;
 }
+
+[dir] .list_value {
+    border: var(--borderWidth-thin) solid var(--bs-border-color);
+    border-radius: var(--borderRadius-medium);
+    background-color: var(--bs-body-bg);
+}
+
+input[type="text"] {
+    border: var(--borderWidth-thin) solid var(--bs-border-color);
+    border-radius: var(--borderRadius-medium);
+    background-color: var(--bgColor-muted);
+}
+
+[dir] .wt-calendar-month .wt-page-options-label, [dir] .wt-calendar-month .wt-page-options-value {
+    border: var(--borderWidth-thin) solid var(--bs-border-color);
+}
