@@ -1,4 +1,6 @@
 [![webtrees major version](https://img.shields.io/badge/webtrees-v2.1.x-green)](https://github.com/fisharebest/webtrees/releases)
+[![webtrees major version](https://img.shields.io/badge/webtrees-v2.2.x-green)](https://github.com/fisharebest/webtrees/releases)
+
 # Primer theme for webtrees
 This theme for [webtrees](https://webtrees.net) takes inspiration from the look and feel on the GitHub web site. It also adds some icons for menus and other controls. The design used on GitHub is called the Primer Design System.
 
