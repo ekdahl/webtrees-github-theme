@@ -73,6 +73,10 @@
     --content: "\f1ea";
 }
 
+.nav-item.menu-story a::before {
+    --content: "\f02d";
+}
+
 /* Individual/family icons */
 
 .wt-icon-individual::before, .wt-icon-family::before {
