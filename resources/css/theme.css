@@ -385,10 +385,6 @@ table {
     padding: 0;
 }
 
-[dir] .wt-block-header {
-    background-color: var(--bgColor-muted);
-}
-
 [dir] .wt-block {
     border-color: var(--bs-border-color);
 }
@@ -518,9 +514,12 @@ a.btn.btn-outline-secondary:hover {
     padding-top: 0;
 }
 
-.wt-block-header {
-    height: 2.5rem;
+[dir] .wt-block-header {
+    background-color: var(--bgColor-muted);
+    min-height: var(--base-size-40);
     align-content: center;
+    padding-top: var(--base-size-4);
+    padding-bottom: var(--base-size-4);
 }
 
 [dir] span.twitter-typeahead .tt-dropdown-menu, [dir] span.twitter-typeahead .tt-menu {
