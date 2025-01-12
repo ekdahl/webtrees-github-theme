@@ -622,3 +622,20 @@ input[type="text"] {
     background-image: var(--spinner);
     height: var(--base-size-36);
 }
+
+.wt-individual-silhouette-m, .icon-silhouette-m {
+    content: var(--silhouette-m);
+}
+
+.wt-individual-silhouette-f, .icon-silhouette-f {
+    content: var(--silhouette-f);
+}
+
+.wt-individual-silhouette-m, .wt-individual-silhouette-f {
+    padding: var(--base-size-4);
+}
+
+.icon-silhouette-m, .icon-silhouette-f {
+    height: 4.5rem;
+    transform: scaleX(-1);
+}
