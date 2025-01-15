@@ -181,6 +181,10 @@
     content: '\f70b';
 }
 
+.wt-fact-icon-NOTE::before {
+    content: '\f249';
+}
+
 .wt-fact-icon-OCCU::before {
     content: '\f6e3';
 }
