@@ -639,8 +639,49 @@ input[type="text"] {
     transform: scaleX(-1);
 }
 
+/* Markdown */
+
 blockquote {
     padding: 0 1em;
     color: var(--fgColor-muted);
     border-left: .25em solid var(--borderColor-default);
+}
+
+code {
+    padding: var(--base-size-8) var(--base-size-12);
+    margin: var(--base-size-4);
+    font-size: 85%;
+    color: var(--fgColor-default);
+    background-color: var(--bgColor-muted, var(--color-canvas-subtle));
+    border-radius: var(--borderRadius-default);
+}
+
+[dir] .wt-fact-value table {
+    display: block;
+    width: 100%;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+    margin-bottom: var(--base-size-16);
+}
+
+[dir] .wt-fact-value table th {
+    font-weight: var(--base-text-weight-semibold, 600);
+    background-color: var(--bgColor-default);
+}
+
+[dir] .wt-fact-value table tr {
+    background-color: var(--bgColor-default);
+    border-top: var(--borderWidth-thin) solid var(--borderColor-muted);
+    border-radius: 0 !important;
+}
+
+[dir] .wt-fact-value table th, [dir] .wt-fact-value table td {
+    padding: 6px 13px;
+    border: var(--borderWidth-thin) solid var(--borderColor-default);
+    border-radius: 0 !important;
+}
+
+[dir] .wt-fact-value table tr:nth-child(2n) {
+    background-color: var(--bgColor-muted);
 }
