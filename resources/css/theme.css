@@ -639,6 +639,10 @@ input[type="text"] {
     transform: scaleX(-1);
 }
 
+#sb_desc_content {
+    font-size: var(--font-size-small);
+}
+
 /* Markdown */
 
 blockquote {
