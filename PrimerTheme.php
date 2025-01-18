@@ -163,7 +163,7 @@ class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
         $stylesheets[] = $this->assetUrl('css/primer/functional/themes/' . $this->palette() . '.css');
         $stylesheets[] = $this->assetUrl('css/primer/functional/typography/typography.css');
         $stylesheets[] = $this->assetUrl('css/primer/primitives/temp-typography-tokens.css');
-        $stylesheets[] = $this->assetUrl('css/site-logo-' . $this->getPreference('logo', 'people') . '.css');
+        $stylesheets[] = $this->assetUrl('css/site-logo-' . $this->getPreference('logo', 'people', 'custom') . '.css');
 
         return $stylesheets;
     }
@@ -263,6 +263,7 @@ class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
         $logos = [
             'people'   => I18N::translate('People'),
             'webtrees' => I18N::translate('webtrees'),
+            'custom'   => I18N::translate('Custom'),
         ];
 
         return $logos;
@@ -286,7 +287,7 @@ class PrimerTheme extends MinimalTheme implements ModuleCustomInterface, ModuleG
             'palette'      => $this->getPreference('palette', 'dark'),
             'palettes'     => $this->palettes(),
             'title'        => $this->title(),
-            'logo'    => $this->getPreference('logo', 'people'),
+            'logo'    => $this->getPreference('logo', 'people', 'custom'),
             'logos'   => $this->logos(),
         ]);
     }
